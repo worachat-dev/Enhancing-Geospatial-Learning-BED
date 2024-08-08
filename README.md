@@ -85,7 +85,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Screenshots
 
-![Burger Bar Cafe website](./image.png)
+![Enhancing Geospatial Learning with Folium](./image.png)
 
 ## Contact
 
