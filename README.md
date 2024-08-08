@@ -50,7 +50,7 @@ mymap = folium.Map(location=map_center, zoom_start=12)
 # Create a marker for Thai School with a blue info sign icon and a popup
 marker = folium.Marker(
     location=map_center,
-    popup="Matthayom Wat Nongkhaem School",
+    popup="Thai School",
     icon=folium.Icon(color="blue", prefix="fa", icon="info-sign")
 )
 
