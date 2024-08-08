@@ -1,8 +1,65 @@
-Python code for creating a map:
+## Enhancing Geospatial Learning with Folium
 
-## New York City Map with Folium
+# Folium Map Project
 
-This project demonstrates a simple Python script using the `folium` library to create a map centered on New York City with a blue info sign marker and a popup.
+This project demonstrates how to create an interactive map using the Folium library in Python. The map centers on Matthayom Wat Nongkhaem School in Bangkok, Thailand, and includes a marker with a popup.
+
+## Installation
+
+To run this project, you need to have Python and Folium installed on your machine. You can install Folium using pip:
+
+```bash
+pip install folium
+```
+
+## Usage
+
+To generate the map, you can use the following Python code:
+
+```python
+import folium
+
+# Define map center coordinates (Matthayom Wat Nongkhaem School)
+map_center = [13.676519, 100.3372947]  # Corrected longitude for Matthayom Wat Nongkhaem School
+
+# Create a base map with zoom level 12
+mymap = folium.Map(location=map_center, zoom_start=12)
+
+# Create a marker for Matthayom Wat Nongkhaem School with a blue info sign icon and a popup
+marker = folium.Marker(
+    location=map_center,
+    popup="Matthayom Wat Nongkhaem School",
+    icon=folium.Icon(color="blue", prefix="fa", icon="info-sign")
+)
+
+# Add the marker to the map
+marker.add_to(mymap)
+
+# Display the map (no need for IPython.display since folium handles it)
+mymap
+```
+
+## Description
+
+This project focuses on creating an interactive map centered on Matthayom Wat Nongkhaem School. The map includes:
+
+- A base map centered at the coordinates of the school.
+- A marker at the school's location with a blue info sign icon.
+- A popup displaying "Matthayom Wat Nongkhaem School" when the marker is clicked.
+
+## Running the Project
+
+To run the project, save the provided code in a Python script or Jupyter Notebook and execute it. The map will be generated and displayed in your default web browser.
+
+## Notes
+
+- Ensure the coordinates for the map center and marker are correct.
+- Customize the popup text and marker icon as needed.
+
+## License
+
+This project is licensed under the MIT License.
+
 
 **Running the code:**
 
