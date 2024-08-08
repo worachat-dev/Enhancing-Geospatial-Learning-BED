@@ -1,6 +1,6 @@
 # Enhancing Geospatial Learning with Folium
 
-This project demonstrates how to create an interactive map using the Folium library in Python. The map centers on Matthayom Wat Nongkhaem School in Bangkok, Thailand, and includes a marker with a popup.
+This project demonstrates how to create an interactive map using the Folium library in Python. The map centers on New York City and Thai School in Bangkok, Thailand, and includes a marker with a popup.
 
 ## Installation
 
@@ -17,13 +17,37 @@ To generate the map, you can use the following Python code:
 ```python
 import folium
 
-# Define map center coordinates (Matthayom Wat Nongkhaem School)
-map_center = [13.676519, 100.3372947]  # Corrected longitude for Matthayom Wat Nongkhaem School
+# Define map center coordinates (New York City)
+map_center = [40.7128, -74.0060]
 
 # Create a base map with zoom level 12
 mymap = folium.Map(location=map_center, zoom_start=12)
 
-# Create a marker for Matthayom Wat Nongkhaem School with a blue info sign icon and a popup
+# Create a marker for New York City with a blue info sign icon and a popup
+marker = folium.Marker(
+    location=map_center,
+    popup="New York City",
+    icon=folium.Icon(color="blue", prefix="fa", icon="info-sign")
+)
+
+# Add the marker to the map
+marker.add_to(mymap)
+
+# Display the map (folium handles it automatically)
+mymap
+```
+---
+
+```python
+import folium
+
+# Define map center coordinates (Thai School)
+map_center = [13.676519, 100.3372947]  # Corrected longitude for Thai School
+
+# Create a base map with zoom level 12
+mymap = folium.Map(location=map_center, zoom_start=12)
+
+# Create a marker for Thai School with a blue info sign icon and a popup
 marker = folium.Marker(
     location=map_center,
     popup="Matthayom Wat Nongkhaem School",
@@ -39,11 +63,11 @@ mymap
 
 ## Description
 
-This project focuses on creating an interactive map centered on Matthayom Wat Nongkhaem School. The map includes:
+This project focuses on creating an interactive map centered on New York City and Thai School. The map includes:
 
-- A base map centered at the coordinates of the school.
+- A base map centered at the coordinates of the New York City and Thai School.
 - A marker at the school's location with a blue info sign icon.
-- A popup displaying "Matthayom Wat Nongkhaem School" when the marker is clicked.
+- A popup displaying "New York City and Thai School" when the marker is clicked.
 
 ## Running the Project
 
