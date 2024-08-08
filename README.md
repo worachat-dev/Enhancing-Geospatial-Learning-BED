@@ -66,12 +66,12 @@ mymap
 This project focuses on creating an interactive map centered on New York City and Thai School. The map includes:
 
 - A base map centered at the coordinates of the New York City and Thai School.
-- A marker at the school's location with a blue info sign icon.
+- A marker at the New York City and Thai School locations with a blue info sign icon.
 - A popup displaying "New York City and Thai School" when the marker is clicked.
 
 ## Running the Project
 
-To run the project, save the provided code in a Python script or Jupyter Notebook and execute it. The map will be generated and displayed in your default web browser.
+To run the project, save the provided code in a Python script or Jupyter Notebook and execute it. The map will be generated and displayed in your default web browser (Google Colab).
 
 ## Notes
 
