@@ -1,6 +1,4 @@
-## Enhancing Geospatial Learning with Folium
-
-# Folium Map Project
+# Enhancing Geospatial Learning with Folium
 
 This project demonstrates how to create an interactive map using the Folium library in Python. The map centers on Matthayom Wat Nongkhaem School in Bangkok, Thailand, and includes a marker with a popup.
 
@@ -58,46 +56,24 @@ To run the project, save the provided code in a Python script or Jupyter Noteboo
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 
-**Running the code:**
+## Screenshots
 
-1. **Install folium:** Open a terminal and run the command `pip install folium`.
-2. **Create a Python file:** Save the following code in a Python file (e.g., `map.py`):
+![Burger Bar Cafe website](./image.png)
 
-```python
-import folium
+## Contact
 
-# Define map center coordinates (New York City)
-map_center = [40.7128, -74.0060]
+For any inquiries or issues, please contact me!
 
-# Create a base map with zoom level 12
-mymap = folium.Map(location=map_center, zoom_start=12)
+## Author
 
-# Create a marker for New York City with a blue info sign icon and a popup
-marker = folium.Marker(
-    location=map_center,
-    popup="New York City",
-    icon=folium.Icon(color="blue", prefix="fa", icon="info-sign")
-)
+- **Worachat W, Dev.** - *Data Science, Engineering & Full Stack Dev. 2024*  
+  [LinkedIn](https://www.linkedin.com/in/brainwaves-your-ai-playground-82155961/) | [GitHub](https://github.com/worachat-dev) | [Facebook](https://web.facebook.com/NutriCious.Thailand)
 
-# Add the marker to the map
-marker.add_to(mymap)
 
-# Display the map (folium handles it automatically)
-mymap
-```
-
-3. **Run the script:** Execute the Python file using a command like `python map.py` in your terminal.
-
-**Explanation:**
-
-- The code imports the `folium` library.
-- It defines the map center coordinates for New York City.
-- It creates a base map object with the specified center and zoom level.
-- It then defines a marker object with the same coordinates, a popup message, and a blue info sign icon.
-- The marker is added to the map, and finally, the map is displayed.
+---
 
 **Additional Notes:**
 
